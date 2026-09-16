@@ -3,12 +3,12 @@
   <head><meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
-<link rel="index" title="Index" href="genindex.html"><link rel="search" title="Search" href="search.html"><link rel="next" title="Table of Contents" href="contents.html">
+<link rel="index" title="Index" href="genindex.html"><link rel="search" title="Search" href="search.html"><link rel="next" title="(GPU-)Batched Closed Orbit Finder" href="co.html"><link rel="prev" title="Time-Dependent Parameters and Ramping" href="timedependent.html">
         <link rel="prefetch" href="_static/SciBmad-Logo.png" as="image">
         <link rel="prefetch" href="_static/SciBmad-Logo-dark.png" as="image">
 
     <!-- Generated with Sphinx 9.1.0 and Furo 2025.12.19 -->
-        <title>SciBmad Documentation</title>
+        <title>Batch Parameters - SciBmad Documentation</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=d111a655" />
     <link rel="stylesheet" type="text/css" href="_static/styles/furo.css?v=7bdb33bb" />
     <link rel="stylesheet" type="text/css" href="_static/mystnb.11b39860a7a0cbfd473a3ad8a317855267ff0bd372690045ca344a6b62be495e.css" />
@@ -166,7 +166,7 @@
       </label>
     </div>
     <div class="header-center">
-      <a href="#"><div class="brand">SciBmad Documentation</div></a>
+      <a href="index.html"><div class="brand">SciBmad Documentation</div></a>
     </div>
     <div class="header-right">
       <div class="theme-toggle-container theme-toggle-header">
@@ -185,7 +185,7 @@
   <aside class="sidebar-drawer">
     <div class="sidebar-container">
       
-      <div class="sidebar-sticky"><a class="sidebar-brand" href="#">
+      <div class="sidebar-sticky"><a class="sidebar-brand" href="index.html">
   <div class="sidebar-logo-container">
     <img class="sidebar-logo only-light" src="_static/SciBmad-Logo.png" alt="Light Logo"/>
     <img class="sidebar-logo only-dark" src="_static/SciBmad-Logo-dark.png" alt="Dark Logo"/>
@@ -198,8 +198,8 @@
   <input type="hidden" name="area" value="default">
 </form>
 <div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
-  <ul class="current">
-<li class="toctree-l1 current current-page"><a class="current reference internal" href="#">Overview</a></li>
+  <ul>
+<li class="toctree-l1"><a class="reference internal" href="index.html">Overview</a></li>
 <li class="toctree-l1"><a class="reference internal" href="contents.html">Table of Contents</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
@@ -242,7 +242,7 @@
 </li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Particle Tracking</span></p>
-<ul>
+<ul class="current">
 <li class="toctree-l1 has-children"><a class="reference internal" href="track.html">Track</a><input aria-label="Toggle navigation of Track" class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" role="switch" type="checkbox"/><label for="toctree-checkbox-7"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="track.html#basics">Basics</a></li>
 <li class="toctree-l2"><a class="reference internal" href="track.html#configuration-settings">Configuration Settings</a></li>
@@ -261,10 +261,10 @@
 <li class="toctree-l2"><a class="reference internal" href="timedependent.html#limitations">Limitations</a></li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="batch.html">Batch Parameters</a><input aria-label="Toggle navigation of Batch Parameters" class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" role="switch" type="checkbox"/><label for="toctree-checkbox-9"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="batch.html#basics">Basics</a></li>
-<li class="toctree-l2"><a class="reference internal" href="batch.html#limitations">Limitations</a></li>
-<li class="toctree-l2"><a class="reference internal" href="batch.html#gpu-batch-parameter-simulation">GPU Batch Parameter Simulation</a></li>
+<li class="toctree-l1 current has-children current-page"><a class="current reference internal" href="#">Batch Parameters</a><input aria-label="Toggle navigation of Batch Parameters" checked="" class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" role="switch" type="checkbox"/><label for="toctree-checkbox-9"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="#basics">Basics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#limitations">Limitations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#gpu-batch-parameter-simulation">GPU Batch Parameter Simulation</a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="co.html">(GPU-)Batched Closed Orbit Finder</a><input aria-label="Toggle navigation of (GPU-)Batched Closed Orbit Finder" class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" role="switch" type="checkbox"/><label for="toctree-checkbox-10"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
@@ -361,12 +361,12 @@
         </a>
         <div class="content-icon-container">
           <div class="view-this-page">
-  <a class="muted-link" href="https://github.com/bmad-sim/SciBmad.jl/blob/main/docs/src/index.md?plain=true" title="View this page">
+  <a class="muted-link" href="https://github.com/bmad-sim/SciBmad.jl/blob/main/docs/src/batch.md?plain=true" title="View this page">
     <svg><use href="#svg-eye"></use></svg>
     <span class="visually-hidden">View this page</span>
   </a>
 </div><div class="edit-this-page">
-  <a class="muted-link" href="https://github.com/bmad-sim/SciBmad.jl/edit/main/docs/src/index.md" rel="edit" title="Edit this page">
+  <a class="muted-link" href="https://github.com/bmad-sim/SciBmad.jl/edit/main/docs/src/batch.md" rel="edit" title="Edit this page">
     <svg><use href="#svg-pencil"></use></svg>
     <span class="visually-hidden">Edit this page</span>
   </a>
@@ -383,125 +383,169 @@
           </label>
         </div>
         <article role="main" id="furo-main-content">
-          <section class="tex2jax_ignore mathjax_ignore" id="scibmad">
-<h1>SciBmad<a class="headerlink" href="#scibmad" title="Link to this heading">¶</a></h1>
-<p><a class="reference external" href="https://bmad-sim.github.io/SciBmad.jl"><img alt="Stable" src="https://img.shields.io/badge/docs-stable-blue.svg" /></a></p>
-<!---
-[![Dev](https://img.shields.io/badge/docs-dev-blue.svg)](https://bmad-sim.github.io/SciBmad.jl/dev/)
-[![Build Status](https://github.com/bmad-sim/SciBmad.jl/actions/workflows/CI.yml/badge.svg?branch=main)](https://github.com/bmad-sim/SciBmad.jl/actions/workflows/CI.yml?query=branch%3Amain)
-[![Coverage](https://codecov.io/gh/bmad-sim/SciBmad.jl/branch/main/graph/badge.svg)](https://codecov.io/gh/bmad-sim/SciBmad.jl)!-->
-<p><a class="reference external" href="https://bmad-sim.github.io/SciBmad.jl/installation.html">Installation</a></p>
-<p><a class="reference external" href="https://bmad-sim.github.io/SciBmad.jl/quickstart.html">Quickstart Guide</a></p>
-<!--
-, [Slides](https://github.com/user-attachments/files/25094046/scibmad-eic-02-02-2026.pdf),    [Examples](https://github.com/bmad-sim/SciBmad.jl/tree/main/examples)
-!-->
-<section id="overview">
-<h2>Overview<a class="headerlink" href="#overview" title="Link to this heading">¶</a></h2>
-<p>SciBmad is a new open source, high-performance, CPU/GPU compatible, polymorphic, and forwards-/backwards-/Taylor-differentiable accelerator physics simulation ecosystem.</p>
-</section>
-<section id="project-status">
-<h2>Project Status<a class="headerlink" href="#project-status" title="Link to this heading">¶</a></h2>
-<p>SciBmad development is progressing rapidly. Features included in the current state of the project (0.5.0) and currently being planned for later releases are:</p>
-<section id="current-release-0-5">
-<h3>Current Release 0.5<a class="headerlink" href="#current-release-0-5" title="Link to this heading">¶</a></h3>
-<ul class="simple">
-<li><p>CPU/GPU parallelized 6D symplectic particle tracking including spin and radiation</p></li>
-<li><p>Fully forwards-/backwards-/Taylor differentiable to extract gradients w.r.t. anything</p></li>
-<li><p>Taylor series nonlinear normal form analysis (i.e. nonlinear periodic Twiss functions) including spin and radiation</p></li>
-<li><p>Arbitrary time-dependent accelerator parameters (e.g. magnet strengths, reference energy, misalignments)</p></li>
-<li><p>CPU/GPU parallelized tracking and analysis over differing accelerator parameters (batch parameter evaluation)</p></li>
-<li><p>Arbitrarily-interdependent accelerator parameters with lazily-evaluated deferred expressions</p></li>
-<li><p>CPU/GPU parallelized dynamic aperture scans</p></li>
-<li><p>Arbitrary placements and orientations of accelerator elements</p></li>
-<li><p>CPU/GPU parallelized intrabeam scattering (IBS)</p></li>
-<li><p>CPU/GPU parallelized Numerical Analysis of Fundamental Frequencies (NAFF)</p></li>
-<li><p>CPU/GPU parallelized Newton root finder</p></li>
-<li><p>CPU/GPU parallelized and differentiable symplectic tracking through arbitrary electromagnetic fields (implicit integration)</p></li>
-<li><p>Twiss functions at every integration step (inside elements)</p></li>
-<li><p>Resonance driving terms (including parameter dependence) included in Twiss</p></li>
-<li><p>Context-switching for evalution of deferred expressions for accelerator parameters</p></li>
-<li><p>Open lattice Twiss functions given initial normalizing transformation</p></li>
-</ul>
-</section>
-<section id="features-in-future-releases">
-<h3>Features in Future Releases<a class="headerlink" href="#features-in-future-releases" title="Link to this heading">¶</a></h3>
-<ul class="simple">
-<li><p>Easy optimization interface</p></li>
-<li><p>Generalized gradient field description</p></li>
-<li><p>Wakefields</p></li>
-<li><p>Bindings to <a class="reference external" href="https://github.com/BLAST-WarpX/warpx">WarpX</a> for collective effects (e.g. strong-strong beam beam)</p></li>
-<li><p>Weak-strong symplectic beam-beam interaction</p></li>
-<li><p>PyTorch bindings</p></li>
-<li><p>Exact multipoles in curved coordinate systems</p></li>
-<li><p>Electric multipoles</p></li>
-<li><p>Space charge</p></li>
-<li><p>Coherent synchrotron radiation</p></li>
-<li><p>Superposition of elements</p></li>
-<li><p>Fork elements and connecting lattice branches together.</p></li>
-<li><p><a class="reference external" href="https://github.com/bmad-sim/SciBmad.jl/issues/54">Other projects</a></p></li>
-</ul>
-</section>
-</section>
-<section id="scibmad-family">
-<h2>SciBmad Family<a class="headerlink" href="#scibmad-family" title="Link to this heading">¶</a></h2>
-<p>SciBmad consists of a set of modular packages:</p>
-<ul class="simple">
-<li><p><strong><a class="reference external" href="https://github.com/bmad-sim/BeamTracking.jl"><code class="docutils literal notranslate"><span class="pre">BeamTracking</span></code></a>:</strong> Universally polymorphic, differentiable, portable, and parallelized integrators for simulating charged particle beams on the CPU and various GPUs including NVIDIA CUDA, Apple Metal, Intel oneAPI, and AMD ROCm</p></li>
-<li><p><strong><a class="reference external" href="https://github.com/bmad-sim/GTPSA.jl"><code class="docutils literal notranslate"><span class="pre">GTPSA</span></code></a>:</strong> Fast high-order (Taylor mode) automatic differentiation using the Generalised Truncated Power Series Algebra (GTPSA) library</p></li>
-<li><p><strong><a class="reference external" href="https://github.com/bmad-sim/Beamlines.jl"><code class="docutils literal notranslate"><span class="pre">Beamlines</span></code></a>:</strong> Defines accelerator lattices in a fast, flexible, fully-polymorphic, and differentiable way, providing both eagerly- and lazily-evaluated deferred expressions for interdependent parameters</p></li>
-<li><p><strong><a class="reference external" href="https://github.com/bmad-sim/NonlinearNormalForm.jl"><code class="docutils literal notranslate"><span class="pre">NonlinearNormalForm</span></code></a>:</strong> Map-based perturbation theory of differential-algebraic maps, which may include spin and large damping, using Lie algebraic methods</p></li>
-<li><p><strong><a class="reference external" href="https://github.com/bmad-sim/FundamentalFrequencies.jl"><code class="docutils literal notranslate"><span class="pre">FundamentalFrequencies</span></code></a>:</strong> GPU-batchable Numerical Analysis of Fundamental Frequencies (NAFF)</p></li>
-<li><p><strong><a class="reference external" href="https://github.com/bmad-sim/AtomicAndPhysicalConstants.jl"><code class="docutils literal notranslate"><span class="pre">AtomicAndPhysicalConstants</span></code></a>:</strong> Library providing physical constants and properties for any atomic or subatomic particle for use in simulations</p></li>
-</ul>
-</section>
-<section id="paper-and-citation">
-<h2>Paper and Citation<a class="headerlink" href="#paper-and-citation" title="Link to this heading">¶</a></h2>
-<p><a class="reference external" href="https://github.com/bmad-sim/SciBmad.jl/blob/main/paper/THP5325.pdf">Paper</a></p>
-<p>If you find SciBmad useful in your work, please cite this paper:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nd">@inproceedings</span><span class="p">{</span><span class="n">signorelli</span><span class="p">:</span><span class="n">ipac2026</span><span class="o">-</span><span class="n">thp5325</span><span class="p">,</span>
-    <span class="n">author</span> <span class="o">=</span> <span class="p">{</span><span class="n">M</span><span class="o">.</span> <span class="n">G</span><span class="o">.</span> <span class="n">Signorelli</span> <span class="ow">and</span> <span class="n">J</span><span class="o">.</span> <span class="n">Devlin</span> <span class="ow">and</span> <span class="n">G</span><span class="o">.</span> <span class="n">H</span><span class="o">.</span> <span class="n">Hoffstaetter</span> <span class="ow">and</span> <span class="n">D</span><span class="o">.</span> <span class="n">Sagan</span><span class="p">},</span>
-    <span class="n">title</span> <span class="o">=</span> <span class="p">{</span><span class="n">SciBmad</span><span class="p">:</span> <span class="n">A</span> <span class="n">differentiable</span><span class="p">,</span> <span class="n">GPU</span><span class="o">-</span><span class="n">parallelized</span> <span class="n">software</span> <span class="n">library</span> <span class="k">for</span> <span class="n">particle</span> <span class="n">accelerator</span> <span class="n">design</span><span class="p">,</span> <span class="n">nonlinear</span> <span class="n">analysis</span><span class="p">,</span> <span class="ow">and</span> <span class="n">machine</span> <span class="n">learning</span><span class="p">},</span>
-    <span class="n">booktitle</span> <span class="o">=</span> <span class="p">{</span><span class="n">Proc</span><span class="o">.</span> <span class="n">IPAC</span><span class="s1">'26},</span>
-    <span class="o">%</span>  <span class="n">booktitle</span> <span class="o">=</span> <span class="p">{</span><span class="n">Proc</span><span class="o">.</span> <span class="mi">17</span><span class="n">th</span> <span class="n">International</span> <span class="n">Particle</span> <span class="n">Accelerator</span> <span class="n">Conference</span><span class="p">},</span>
-    <span class="n">pages</span> <span class="o">=</span> <span class="p">{</span><span class="mi">4737</span><span class="o">-</span><span class="mi">4740</span><span class="p">},</span>
-    <span class="n">paper</span> <span class="o">=</span> <span class="p">{</span><span class="n">THP5325</span><span class="p">},</span>
-    <span class="n">venue</span> <span class="o">=</span> <span class="p">{</span><span class="n">Deauville</span><span class="p">,</span> <span class="n">France</span><span class="p">},</span>
-    <span class="n">intype</span> <span class="o">=</span> <span class="p">{</span><span class="n">presented</span> <span class="n">at</span> <span class="n">IPAC</span><span class="s1">'26},</span>
-    <span class="n">series</span> <span class="o">=</span> <span class="p">{</span><span class="n">IPAC</span><span class="s1">'26 - 17th International Particle Accelerator Conference},</span>
-    <span class="n">number</span> <span class="o">=</span> <span class="p">{</span><span class="mi">17</span><span class="p">},</span>
-    <span class="n">publisher</span> <span class="o">=</span> <span class="p">{</span><span class="n">JACoW</span> <span class="n">Publishing</span><span class="p">,</span> <span class="n">Geneva</span><span class="p">,</span> <span class="n">Switzerland</span><span class="p">},</span>
-    <span class="n">month</span> <span class="o">=</span> <span class="p">{</span><span class="mi">05</span><span class="p">},</span>
-    <span class="n">year</span> <span class="o">=</span> <span class="p">{</span><span class="mi">2026</span><span class="p">},</span>
-    <span class="n">issn</span> <span class="o">=</span> <span class="p">{</span><span class="mi">2673</span><span class="o">-</span><span class="mi">5350</span><span class="p">},</span>
-    <span class="n">isbn</span> <span class="o">=</span> <span class="p">{</span><span class="mi">978</span><span class="o">-</span><span class="mi">3</span><span class="o">-</span><span class="mi">95450</span><span class="o">-</span><span class="mi">252</span><span class="o">-</span><span class="mi">3</span><span class="p">},</span>
-    <span class="n">url</span> <span class="o">=</span> <span class="p">{</span><span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">jacow</span><span class="o">.</span><span class="n">org</span><span class="o">/</span><span class="n">ipac2026</span><span class="o">/</span><span class="n">pdf</span><span class="o">/</span><span class="n">THP5325</span><span class="o">.</span><span class="n">pdf</span><span class="p">},</span>
-    <span class="n">note</span> <span class="o">=</span> <span class="p">{</span><span class="n">presented</span> <span class="n">at</span> <span class="n">IPAC</span><span class="s1">'26, Deauville, France, 2026, paper THP5325},</span>
-    <span class="n">language</span> <span class="o">=</span> <span class="p">{</span><span class="n">English</span><span class="p">},</span>
-    <span class="n">eventdate</span> <span class="o">=</span> <span class="p">{</span><span class="mi">2026</span><span class="o">-</span><span class="mi">05</span><span class="o">-</span><span class="mi">17</span><span class="o">/</span><span class="mi">2026</span><span class="o">-</span><span class="mi">05</span><span class="o">-</span><span class="mi">22</span><span class="p">},</span>
-<span class="p">}</span>
+          <section class="tex2jax_ignore mathjax_ignore" id="batch-parameters">
+<span id="batchparams"></span><h1>Batch Parameters<a class="headerlink" href="#batch-parameters" title="Link to this heading">¶</a></h1>
+<section id="basics">
+<h2>Basics<a class="headerlink" href="#basics" title="Link to this heading">¶</a></h2>
+<p>In SciBmad, it is possible to not only CPU/GPU parallelize over particles in a bunch, but
+also to parallelize over many different <strong>accelerator parameters</strong>. This is possible using
+SciBmad’s <code class="docutils literal notranslate"><span class="pre">BatchParam</span></code> type.</p>
+<p>As a first example, say we want to simulate 1 particle travelling through 10 different FODO
+cells in parallel. We first define our FODO cell, using a
+<a class="reference internal" href="defexpr.html"><span class="std std-doc">deferred expression</span></a> for the quadrupole strength:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-julia notranslate"><div class="highlight"><pre><span></span><span class="nd">@elements</span><span class="w"> </span><span class="k">begin</span>
+<span class="w">  </span><span class="n">qf</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Quadrupole</span><span class="p">(</span><span class="n">Kn1</span><span class="o">=</span><span class="n">DefExpr</span><span class="p">(</span><span class="n">c</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="n">c</span><span class="o">.</span><span class="n">K1</span><span class="p">),</span><span class="w"> </span><span class="n">L</span><span class="o">=</span><span class="mf">0.4</span><span class="p">)</span>
+<span class="w">  </span><span class="n">d</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Drift</span><span class="p">(</span><span class="n">L</span><span class="o">=</span><span class="mf">0.5</span><span class="p">)</span>
+<span class="w">  </span><span class="n">qd</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Quadrupole</span><span class="p">(</span><span class="n">Kn1</span><span class="o">=</span><span class="n">DefExpr</span><span class="p">(</span><span class="n">c</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="o">-</span><span class="n">c</span><span class="o">.</span><span class="n">K1</span><span class="p">),</span><span class="w"> </span><span class="n">L</span><span class="o">=</span><span class="mf">0.4</span><span class="p">)</span>
+<span class="k">end</span>
+
+<span class="n">fodo</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Beamline</span><span class="p">([</span><span class="n">qf</span><span class="p">,</span><span class="w"> </span><span class="n">d</span><span class="p">,</span><span class="w"> </span><span class="n">qd</span><span class="p">,</span><span class="w"> </span><span class="n">d</span><span class="p">],</span><span class="w"> </span><span class="n">E_ref</span><span class="o">=</span><span class="mf">18e9</span><span class="p">,</span>
+<span class="w">        </span><span class="n">species_ref</span><span class="o">=</span><span class="n">Species</span><span class="p">(</span><span class="s">"electron"</span><span class="p">))</span>
 </pre></div>
 </div>
-<!--
-Site navigation. This file is appended to the repository README by
-`docs/src/conf.py` to produce `docs/src/index.md`, the root document. The
-toctrees are `:hidden:` so the landing page itself stays a verbatim copy of the
-README while Sphinx still gets the navigation structure it requires here.
--->
-<div class="toctree-wrapper compound">
 </div>
-<div class="toctree-wrapper compound">
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Beamline:
+ species_ref = electron
+ E_ref = 1.8e10
+
+ <span class=" -Color -Color-Bold"> Index </span> <span class=" -Color -Color-Bold"> Name </span> <span class=" -Color -Color-Bold"> Kind       </span> <span class=" -Color -Color-Bold"> s [m] </span> <span class=" -Color -Color-Bold"> L [m] </span>
+  1       qf     Quadrupole   0       0.4
+  2       d      Drift        0.4     0.5
+  3       qd     Quadrupole   0.9     0.4
+  4       d      Drift        1.3     0.5
+</pre></div>
 </div>
-<div class="toctree-wrapper compound">
 </div>
-<div class="toctree-wrapper compound">
 </div>
-<div class="toctree-wrapper compound">
+<p>We can then set the <code class="docutils literal notranslate"><span class="pre">K1</span></code> property of <code class="docutils literal notranslate"><span class="pre">fodo.context</span></code> to be a <code class="docutils literal notranslate"><span class="pre">BatchParam</span></code> with 10 different
+quadrupole strengths</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-julia notranslate"><div class="highlight"><pre><span></span><span class="n">fodo</span><span class="o">.</span><span class="n">context</span><span class="o">.</span><span class="n">K1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">BatchParam</span><span class="p">(</span><span class="n">collect</span><span class="p">(</span><span class="mf">0.1</span><span class="o">:</span><span class="mf">0.05</span><span class="o">:</span><span class="mf">0.55</span><span class="p">))</span>
+</pre></div>
 </div>
-<div class="toctree-wrapper compound">
 </div>
-<div class="toctree-wrapper compound">
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>BatchParam([0.1, 0.15, 0.2, 0.25, 0.3, 0.35, 0.4, 0.45, 0.5, 0.55])
+</pre></div>
 </div>
-<div class="toctree-wrapper compound">
+</div>
+</div>
+<p>Now when we call <code class="docutils literal notranslate"><span class="pre">track</span></code> with this <code class="docutils literal notranslate"><span class="pre">Beamline</span></code>, the 1st particle will see <code class="docutils literal notranslate"><span class="pre">K1=0.1</span></code>, the 2nd
+particle will see <code class="docutils literal notranslate"><span class="pre">K1=0.15</span></code>, the third particle <code class="docutils literal notranslate"><span class="pre">K1=0.2</span></code>, etc. So we’ll make all initial
+particle coordinates be the same, and observe the difference in the output <span class="math notranslate nohighlight">\(x\)</span>-coordinates:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-julia notranslate"><div class="highlight"><pre><span></span><span class="n">v0</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">repeat</span><span class="p">([</span><span class="mf">1e-3</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="mf">1e-3</span><span class="p">],</span><span class="w"> </span><span class="mi">10</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span>
+<span class="n">res</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">track</span><span class="p">(</span><span class="n">fodo</span><span class="p">,</span><span class="w"> </span><span class="n">v0</span><span class="o">=</span><span class="n">v0</span><span class="p">)</span>
+<span class="n">res</span><span class="o">.</span><span class="n">v</span><span class="p">[</span><span class="o">:</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="k">end</span><span class="p">]</span><span class="w"> </span><span class="c"># output x-coordinates</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>10-element Vector{Float64}:
+ 0.0009632750345036566
+ 0.0009443421015032815
+ 0.0009250290908885881
+ 0.0009053361724713477
+ 0.0008852635183801984
+ 0.0008648113030604177
+ 0.0008439797032736846
+ 0.0008227688980978304
+ 0.0008011790689265975
+ 0.0007792103994693706
+</pre></div>
+</div>
+</div>
+</div>
+<p>In one parallelized tracking run, we have effectively simulated 10 different beamlines. This
+functionality is extremely powerful, as it enables us to do parameter scans <em>within a single
+process!</em> In fact, SciBmad’s tracking kernels have been carefully developed so that single
+instruction, multiple data parallelization is still applied over different parameters per
+particle.</p>
+<p>Let’s say we want to track 2 particles in each of our 10 different FODO cells instead.
+Because each particle in a bunch sees a corresponding parameter at the same index in the
+<code class="docutils literal notranslate"><span class="pre">BatchParam</span></code>, we need to initialize the <code class="docutils literal notranslate"><span class="pre">BatchParam</span></code> so that each quadrupole strength is
+repeated twice:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-julia notranslate"><div class="highlight"><pre><span></span><span class="n">n_particles</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">2</span>
+<span class="n">fodo</span><span class="o">.</span><span class="n">context</span><span class="o">.</span><span class="n">K1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">BatchParam</span><span class="p">(</span><span class="n">repeat</span><span class="p">(</span><span class="n">collect</span><span class="p">(</span><span class="mf">0.1</span><span class="o">:</span><span class="mf">0.05</span><span class="o">:</span><span class="mf">0.55</span><span class="p">),</span><span class="w"> </span><span class="n">inner</span><span class="o">=</span><span class="n">n_particles</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>BatchParam([0.1, 0.1, 0.15, 0.15, 0.2, 0.2, 0.25, 0.25, 0.3, 0.3, 0.35, 0.35, 0.4, 0.4, 0.45, 0.45, 0.5, 0.5, 0.55, 0.55])
+</pre></div>
+</div>
+</div>
+</div>
+<p>And <code class="docutils literal notranslate"><span class="pre">track</span></code> again:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-julia notranslate"><div class="highlight"><pre><span></span><span class="n">v0</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">repeat</span><span class="p">([</span><span class="mf">1e-3</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="mf">1e-3</span><span class="p">],</span><span class="w"> </span><span class="n">n_particles</span><span class="o">*</span><span class="mi">10</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span>
+<span class="n">res</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">track</span><span class="p">(</span><span class="n">fodo</span><span class="p">,</span><span class="w"> </span><span class="n">v0</span><span class="o">=</span><span class="n">v0</span><span class="p">)</span>
+<span class="n">res</span><span class="o">.</span><span class="n">v</span><span class="p">[</span><span class="o">:</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="k">end</span><span class="p">]</span><span class="w"> </span><span class="c"># output x-coordinates</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>20-element Vector{Float64}:
+ 0.0009632750345036566
+ 0.0009632750345036566
+ 0.0009443421015032815
+ 0.0009443421015032815
+ 0.0009250290908885881
+ 0.0009250290908885881
+ 0.0009053361724713477
+ 0.0009053361724713477
+ 0.0008852635183801984
+ 0.0008852635183801984
+ 0.0008648113030604177
+ 0.0008648113030604177
+ 0.0008439797032736846
+ 0.0008439797032736846
+ 0.0008227688980978304
+ 0.0008227688980978304
+ 0.0008011790689265969
+ 0.0008011790689265969
+ 0.0007792103994693706
+ 0.0007792103994693706
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="limitations">
+<h2>Limitations<a class="headerlink" href="#limitations" title="Link to this heading">¶</a></h2>
+<p>The type of tracking kernel selection for <code class="docutils literal notranslate"><span class="pre">SciBmadStandard</span></code> or <code class="docutils literal notranslate"><span class="pre">Symplectic</span></code> must be the same for all particles. So, for example, if an element has <code class="docutils literal notranslate"><span class="pre">BatchParam</span></code>s where some are nonzero quadrupoles and some are nonzero sextupoles, the entire bunch will default to a drift-kick integration split, as the quadrupole-kick kernel cannot be called simultaneously with the drift-kick kernel. See <a class="reference internal" href="tracking-methods.html"><span class="std std-doc">Tracking Methods</span></a> for more details on the available splits.</p>
+<p>Currently, any parameter in a <code class="docutils literal notranslate"><span class="pre">LineElement</span></code> or <code class="docutils literal notranslate"><span class="pre">Beamline</span></code> may be specified as a <code class="docutils literal notranslate"><span class="pre">BatchParam</span></code>. However, there are a few caveats to keep in mind, which you would only encounter if explicitly passing a <code class="docutils literal notranslate"><span class="pre">Bunch</span></code> to <code class="docutils literal notranslate"><span class="pre">track</span></code> (else, this is handled internally for you):</p>
+<ul class="simple">
+<li><p>If any element length <code class="docutils literal notranslate"><span class="pre">L</span></code> is a <code class="docutils literal notranslate"><span class="pre">BatchParam</span></code>, the bunch <code class="docutils literal notranslate"><span class="pre">t_ref</span></code> must also be a <code class="docutils literal notranslate"><span class="pre">BatchParam</span></code> of the same size</p></li>
+<li><p>If the <code class="docutils literal notranslate"><span class="pre">Beamline</span></code> reference energy is a <code class="docutils literal notranslate"><span class="pre">BatchParam</span></code>, then the bunch <code class="docutils literal notranslate"><span class="pre">p_over_q_ref</span></code> AND bunch <code class="docutils literal notranslate"><span class="pre">t_ref</span></code> must also be <code class="docutils literal notranslate"><span class="pre">BatchParam</span></code>s of the same size</p></li>
+</ul>
+</section>
+<section id="gpu-batch-parameter-simulation">
+<h2>GPU Batch Parameter Simulation<a class="headerlink" href="#gpu-batch-parameter-simulation" title="Link to this heading">¶</a></h2>
+<p>In the same way that a GPU enables parallelization over a huge number of particles, we can
+GPU-parallelize over a huge number of parameters with <code class="docutils literal notranslate"><span class="pre">BatchParam</span></code>s. Simply set the
+parameter to be a <code class="docutils literal notranslate"><span class="pre">GPUArray</span></code>, just as we do with the particle phase space coordinates:</p>
+<div class="highlight-julia notranslate"><div class="highlight"><pre><span></span><span class="k">using</span><span class="w"> </span><span class="n">CUDA</span>
+
+<span class="c"># (100 quad strengths x 1,000 particles per quad strength) = 100,000 particles tracked in total</span>
+<span class="n">n_particles_per_beamline</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1000</span>
+<span class="n">n_quad_strengths</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">100</span>
+
+<span class="n">fodo</span><span class="o">.</span><span class="n">context</span><span class="o">.</span><span class="n">K1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">CuArray</span><span class="p">(</span><span class="n">range</span><span class="p">(</span><span class="n">start</span><span class="o">=</span><span class="mf">0.1</span><span class="p">,</span><span class="w"> </span><span class="n">stop</span><span class="o">=</span><span class="mf">0.55</span><span class="p">,</span><span class="w"> </span><span class="n">length</span><span class="o">=</span><span class="n">n_quad_strengths</span><span class="p">))</span>
+
+<span class="c"># Random initial phase space coordinates:</span>
+<span class="n">v0</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">CUDA</span><span class="o">.</span><span class="n">rand</span><span class="p">(</span><span class="kt">Float64</span><span class="p">,</span><span class="w"> </span><span class="n">n_particles_per_beamline</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">n_quad_strengths</span><span class="p">,</span><span class="w"> </span><span class="mi">6</span><span class="p">)</span><span class="w"> </span><span class="o">.*</span><span class="w"> </span><span class="mf">1e-5</span>
+
+<span class="n">res</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">track</span><span class="p">(</span><span class="n">fodo</span><span class="p">,</span><span class="w"> </span><span class="n">v0</span><span class="o">=</span><span class="n">v0</span><span class="p">,</span><span class="w"> </span><span class="n">spin</span><span class="o">=</span><span class="nb">true</span><span class="p">)</span>
+</pre></div>
 </div>
 </section>
 </section>
@@ -511,16 +555,26 @@ README while Sphinx still gets the navigation structure it requires here.
       <footer>
         
         <div class="related-pages">
-          <a class="next-page" href="contents.html">
+          <a class="next-page" href="co.html">
               <div class="page-info">
                 <div class="context">
                   <span>Next</span>
                 </div>
-                <div class="title">Table of Contents</div>
+                <div class="title">(GPU-)Batched Closed Orbit Finder</div>
               </div>
               <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
             </a>
-          
+          <a class="prev-page" href="timedependent.html">
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
+              <div class="page-info">
+                <div class="context">
+                  <span>Previous</span>
+                </div>
+                
+                <div class="title">Time-Dependent Parameters and Ramping</div>
+                
+              </div>
+            </a>
         </div>
         <div class="bottom-of-page">
           <div class="left-details">
@@ -551,17 +605,10 @@ README while Sphinx still gets the navigation structure it requires here.
         <div class="toc-tree-container">
           <div class="toc-tree">
             <ul>
-<li><a class="reference internal" href="#">SciBmad</a><ul>
-<li><a class="reference internal" href="#overview">Overview</a></li>
-<li><a class="reference internal" href="#project-status">Project Status</a><ul>
-<li><a class="reference internal" href="#current-release-0-5">Current Release 0.5</a></li>
-<li><a class="reference internal" href="#features-in-future-releases">Features in Future Releases</a></li>
-</ul>
-</li>
-<li><a class="reference internal" href="#scibmad-family">SciBmad Family</a></li>
-<li><a class="reference internal" href="#paper-and-citation">Paper and Citation</a><ul>
-</ul>
-</li>
+<li><a class="reference internal" href="#">Batch Parameters</a><ul>
+<li><a class="reference internal" href="#basics">Basics</a></li>
+<li><a class="reference internal" href="#limitations">Limitations</a></li>
+<li><a class="reference internal" href="#gpu-batch-parameter-simulation">GPU Batch Parameter Simulation</a></li>
 </ul>
 </li>
 </ul>
@@ -579,6 +626,8 @@ README while Sphinx still gets the navigation structure it requires here.
     <script src="_static/scripts/furo.js?v=46bd48cc"></script>
     <script src="_static/clipboard.min.js?v=a7894cd8"></script>
     <script src="_static/copybutton.js?v=552d2a3d"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script>
     <script src="_static/topbar-github.js?v=c13617d6"></script>
     <script src="_static/sidebar-current.js?v=23c44312"></script>
     </body>
